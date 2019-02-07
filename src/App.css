@@ -1,0 +1,100 @@
+body{
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.replenish-btn{
+  background: green;
+  border: none;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.modalWrap{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.modalWrap .close{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;;
+}
+.modalWrap .modalBlock{
+  background: #fff;
+  width: 500px;
+  padding: 40px;
+  margin: 0;
+  border: 2px solid #000;
+  border-radius: 10px;
+  
+}
+.modalBlock ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.modalBlock li{
+  list-style: none;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.modalBlock li:hover{
+  background: rgba(0,0,0,.5);
+  color: #fff;
+}
+.modalBlock span{
+  color: #000
+}
+.modalBlock button{
+  color: #fff;
+  margin-left: 15px;
+  background: green;
+  border:1px solid #000;
+  border-radius: 3px;
+  padding: 3px 10px;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+}
+.modalBlock button:hover{
+  background: #fff;
+  color: #000;
+}
